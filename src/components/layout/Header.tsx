@@ -31,7 +31,6 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'PDF Tools', path: '/pdf-tools' },
     { name: 'Image Tools', path: '/image-tools' },
-    { name: 'Audio Tools', path: '/audio-tools' },
     { name: 'All Tools', path: '/tools' },
     { name: 'Pricing', path: '/pricing' },
   ];

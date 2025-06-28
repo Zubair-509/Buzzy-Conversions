@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FileText, 
@@ -9,15 +8,8 @@ import {
   Scissors,
   Lock,
   Unlock,
-  RotateCcw,
   Image,
-  File,
-  Images,
-  Layers,
-  FileMusic,
-  FileAudio,
-  Video,
-  FileVideo
+  Images
 } from 'lucide-react';
 import ToolCard from '../components/features/ToolCard';
 import SEO from '../components/SEO';
@@ -122,35 +114,6 @@ const AllTools = () => {
     }
   ];
 
-  const audioTools = [
-    {
-      title: 'MP4 to MP3',
-      description: 'Extract audio from video files. Convert MP4 videos to MP3 audio format.',
-      icon: <Video size={24} />,
-      path: '/tools/mp4-to-mp3',
-      isPopular: true,
-    },
-    {
-      title: 'WAV to MP3',
-      description: 'Convert WAV audio files to compressed MP3 format without significant quality loss.',
-      icon: <FileMusic size={24} />,
-      path: '/tools/wav-to-mp3',
-    },
-    {
-      title: 'MP3 to WAV',
-      description: 'Convert MP3 files to uncompressed WAV format for high-quality audio editing.',
-      icon: <FileAudio size={24} />,
-      path: '/tools/mp3-to-wav',
-    },
-    {
-      title: 'Audio Compressor',
-      description: 'Reduce audio file size while maintaining good quality. Perfect for sharing.',
-      icon: <FileAudio size={24} />,
-      path: '/tools/audio-compressor',
-      isPopular: true,
-    }
-  ];
-
   const premiumTools = [
     {
       title: 'Batch Converter',
@@ -178,13 +141,6 @@ const AllTools = () => {
       description: 'Professional image editing tools with filters, effects, and more.',
       icon: <Images size={24} />,
       path: '/tools/advanced-image-editor',
-      isPremium: true,
-    },
-    {
-      title: 'Audio Effects Suite',
-      description: 'Add professional audio effects, equalizer, and enhance sound quality.',
-      icon: <FileMusic size={24} />,
-      path: '/tools/audio-effects',
       isPremium: true,
     },
     {
@@ -217,13 +173,6 @@ const AllTools = () => {
       tools: imageTools,
       gradient: 'from-blue-500 to-cyan-500',
       darkGradient: 'dark:from-blue-600 dark:to-cyan-600',
-    },
-    {
-      title: 'Audio Tools',
-      description: 'Convert, compress, and extract audio with our professional audio tools.',
-      tools: audioTools,
-      gradient: 'from-green-500 to-teal-500',
-      darkGradient: 'dark:from-green-600 dark:to-teal-600',
     }
   ];
 
@@ -304,4 +253,4 @@ const AllTools = () => {
   );
 };
 
-export default AllTools; 
+export default AllTools;
